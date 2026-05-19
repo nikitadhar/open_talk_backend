@@ -8,10 +8,7 @@ import { connectToDatabase } from "./database/connection.js";
 const app = express();
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "http://10.246.172.75:3000",
-    ],
+    origin: true,
     credentials: true,
   })
 );
